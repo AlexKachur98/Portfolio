@@ -9,7 +9,7 @@ export default function About() {
     return (
         <div>
             <h2>About Me</h2>
-            <img src="/images/headshot.webp" alt="A head and shoulder shot of Alex Kachur" style={{ maxWidth: '200px', borderRadius: '8px', margin: '1rem 0' }} />
+            <img src="/headshot.webp" alt="A head and shoulder shot of Alex Kachur" style={{ maxWidth: '200px', borderRadius: '8px', margin: '1rem 0' }} />
             <p>
                 Hi, I’m Alex, a Software Engineering Technology student at Centennial College with a passion for building modern web applications and exploring emerging technologies.
             </p>
@@ -27,7 +27,7 @@ export default function About() {
             </p>
             <br />
             {/* Link to a PDF version of my Resume.*/}
-            <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
                 <button>View My Resume (PDF)</button>
             </a>
         </div>
