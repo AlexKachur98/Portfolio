@@ -12,19 +12,19 @@ const myProjects = [
         title: "C# Hangman Game",
         description: "A console-based word guessing game built in C# applying OOP basics.",
         tags: ["C#", "OOP", "Game"],
-        imageUrl: "images/project-hangman.webp"
+        imageUrl: "/images/project-hangman.webp"
     },
     {
         title: "Prestige Exotics Website",
         description: "Luxury car showcase using HTML, CSS, JavaScript and jQuery animations.",
         tags: ["HTML", "CSS", "JavaScript", "jQuery"],
-        imageUrl: "images/project-exotics.webp"
+        imageUrl: "/images/project-exotics.webp"
     },
     {
         title: "UniLabBooker SRS",
         description: "Software Requirements Specification for a lab-booking system.",
         tags: ["SRS", "UML", "Requirements"],
-        imageUrl: "images/project-srs.webp"
+        imageUrl: "/images/project-srs.webp"
     }
 ];
 
