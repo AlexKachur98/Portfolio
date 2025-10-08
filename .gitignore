@@ -1,24 +1,39 @@
-# Logs
-logs
-*.log
+# -----------------------------------------------------------------------------
+# @author Alex Kachur
+# @since 2025-10-08
+# @purpos Ignore build artifacts, environment files, logs, and OS/editor junk
+# -----------------------------------------------------------------------------
+
+# Node
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Build output
+dist/
+build/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Vite cache
+.vite/
+
+# Env files (never commit secrets)
+.env
+.env.*.local
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Coverage & test output
+coverage/
+.nyc_output/
+
+# Logs & misc
+*.log
+*.local
