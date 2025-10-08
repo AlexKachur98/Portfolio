@@ -1,16 +1,91 @@
-# React + Vite
+<!--
+  @author Alex Kachur
+  @since 2025-10-08
+  @purpose Recruiter-ready README for the Portfolio repository
+-->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio
 
-Currently, two official plugins are available:
+A clean, fast personal portfolio built with React + Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![CI](https://github.com/AlexKachur98/Portfolio/actions/workflows/ci.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## React Compiler
+## 🔴 Live Demo
+- Website: https://AlexKachur98.github.io/Portfolio
+- Screenshot:
+  ![Screenshot](public/screenshot.placeholder)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- Responsive layout (mobile → desktop)
+- Project cards from JSON
+- Contact form with basic validation
+- Fast build with Vite + React 18
+- CI pipeline (lint/test/build) using GitHub Actions
 
-## Expanding the ESLint configuration
+## 🧱 Tech Stack
+React 18, Vite, (CSS Modules or Tailwind), ESLint/Prettier, GitHub Actions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ▶️ Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:5173
+
+## 📁 Project Structure (where each file should go)
+
+```
+Portfolio/                         # repo root
+  README.md                        # (this file)                 ← Portfolio/README.md
+  LICENSE                          # license text                ← Portfolio/LICENSE
+  .gitignore                       # git ignore rules            ← Portfolio/.gitignore
+  .editorconfig                    # editor consistency          ← Portfolio/.editorconfig
+  .prettierrc                      # prettier config (JSON)      ← Portfolio/.prettierrc
+  .eslintrc.json                   # eslint config (JSON)        ← Portfolio/.eslintrc.json
+  .nvmrc                           # optional node version       ← Portfolio/.nvmrc
+  vite.config.js                   # Vite config                 ← Portfolio/vite.config.js
+  public/
+    og-image.png                   # social preview image        ← Portfolio/public/og-image.png
+    screenshot.png                 # README screenshot           ← Portfolio/public/screenshot.png
+  src/
+    components/                    # reusable components
+    pages/                         # Home/About/Projects/Contact
+    hooks/                         # custom hooks
+    styles/                        # global styles / Tailwind cfg
+    assets/                        # images/icons
+    App.jsx
+    main.jsx
+  .github/                         # GitHub configs
+    workflows/ci.yml               # CI workflow                 ← Portfolio/.github/workflows/ci.yml
+    ISSUE_TEMPLATE/
+      bug_report.md                # bug template                ← Portfolio/.github/ISSUE_TEMPLATE/bug_report.md
+      feature_request.md           # feature template            ← Portfolio/.github/ISSUE_TEMPLATE/feature_request.md
+    PULL_REQUEST_TEMPLATE.md       # PR template                 ← Portfolio/.github/PULL_REQUEST_TEMPLATE.md
+```
+
+## 🧪 Scripts
+
+- `dev` – run locally
+- `build` – production build
+- `preview` – preview dist build
+- `lint` – lint all files
+- `format` – format code
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## 🔒 Security
+
+See [SECURITY.md](SECURITY.md). Please **do not** open public issues for security reports.
+
+## 🆘 Support
+
+See [SUPPORT.md](SUPPORT.md).
+
+## 📜 License
+
+This project is licensed under the MIT License — see [LICENSE](LICENSE).
