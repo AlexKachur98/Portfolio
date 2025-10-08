@@ -12,14 +12,11 @@ A clean, fast personal portfolio built with React + Vite.
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 🔴 Live Demo
-- Website: https://AlexKachur98.github.io/Portfolio
+- Website: https://AlexKachur.dev
 - Screenshot:
   ![Screenshot](public/screenshot.placeholder)
 
 ## ✨ Features
-- Responsive layout (mobile → desktop)
-- Project cards from JSON
-- Contact form with basic validation
 - Fast build with Vite + React 18
 - CI pipeline (lint/test/build) using GitHub Actions
 
@@ -38,32 +35,55 @@ Open http://localhost:5173
 ## 📁 Project Structure (where each file should go)
 
 ```
-Portfolio/                         # repo root
-  README.md                        # (this file)                 ← Portfolio/README.md
-  LICENSE                          # license text                ← Portfolio/LICENSE
-  .gitignore                       # git ignore rules            ← Portfolio/.gitignore
-  .editorconfig                    # editor consistency          ← Portfolio/.editorconfig
-  .prettierrc                      # prettier config (JSON)      ← Portfolio/.prettierrc
-  .eslintrc.json                   # eslint config (JSON)        ← Portfolio/.eslintrc.json
-  .nvmrc                           # optional node version       ← Portfolio/.nvmrc
-  vite.config.js                   # Vite config                 ← Portfolio/vite.config.js
-  public/
-    og-image.png                   # social preview image        ← Portfolio/public/og-image.png
-    screenshot.png                 # README screenshot           ← Portfolio/public/screenshot.png
+Portfolio/
+  README.md
+  LICENSE
+  CODE_OF_CONDUCT.md
+  CONTRIBUTING.md
+  SECURITY.md
+  SUPPORT.md
+  package.json
+  package-lock.json
+  vite.config.js
+  eslint.config.js
+  index.html
   src/
-    components/                    # reusable components
-    pages/                         # Home/About/Projects/Contact
-    hooks/                         # custom hooks
-    styles/                        # global styles / Tailwind cfg
-    assets/                        # images/icons
     App.jsx
+    MainRouter.jsx
     main.jsx
-  .github/                         # GitHub configs
-    workflows/ci.yml               # CI workflow                 ← Portfolio/.github/workflows/ci.yml
+    index.css
+    components/
+      About.jsx
+      Contact.jsx
+      Education.jsx
+      Home.jsx
+      Layout.jsx
+      Projects.jsx
+      Services.jsx
+  public/
+    documents/
+      resume.pdf
+    images/
+      headshot.webp
+      project-exotics.webp
+      project-hangman.webp
+      project-srs.webp
+  .github/
+    dependabot.yml
+    PULL_REQUEST_TEMPLATE.md
     ISSUE_TEMPLATE/
-      bug_report.md                # bug template                ← Portfolio/.github/ISSUE_TEMPLATE/bug_report.md
-      feature_request.md           # feature template            ← Portfolio/.github/ISSUE_TEMPLATE/feature_request.md
-    PULL_REQUEST_TEMPLATE.md       # PR template                 ← Portfolio/.github/PULL_REQUEST_TEMPLATE.md
+      bug_report.md
+      feature_request.md
+    workflows/
+      ci.yml
+      codeql.yml
+  .editorconfig
+  .eslintrc.json
+  .gitignore
+  .prettierrc
+  dist/                      # build output (generated)
+  node_modules/              # installed dependencies
+  untitled folder/           # currently empty
 ```
 
 ## 🧪 Scripts
