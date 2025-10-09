@@ -1,4 +1,5 @@
 /**
+ * @file Contact.jsx
  * @author Alex Kachur
  * @since 2025-10-08
  * @purpose Renders the Contact page, featuring contact information and an interactive form.
@@ -10,28 +11,23 @@ export default function Contact() {
     const navigate = useNavigate();
 
     const handleSubmit = (event) => {
-        // Prevent the default browser behavior of refreshing the page on form submission.
         event.preventDefault();
-
-        // Redirect back to the Home page.
-        console.log("Form submitted. Redirecting to Home page...");
+        console.log('Form submitted. Redirecting to Home page...');
         navigate('/');
     };
 
     return (
         <div>
-            <h2>Get in Touch</h2>
+            <h1>Get in Touch</h1>
             <p>Whether you’re looking to collaborate, discuss a project, or just say hi — feel free to reach out!</p>
 
-            {/* Contact information panel*/}
             <div style={{ margin: '2rem 0', border: '1px solid #444', padding: '1rem', borderRadius: '8px' }}>
                 <p><strong>Email:</strong> akachur@my.centennialcollege.ca</p>
                 <p><strong>Phone:</strong> 647-281-2180</p>
                 <p><strong>Location:</strong> Toronto • Canada</p>
             </div>
 
-            {/* Interactive Contact Form*/}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} aria-label="Contact form">
                 <div style={{ marginBottom: '1rem' }}>
                     <label htmlFor="firstName">First Name: </label>
                     <input type="text" id="firstName" name="firstName" required />

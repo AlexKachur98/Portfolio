@@ -1,12 +1,12 @@
 /**
+ * @file App.jsx
  * @author Alex Kachur
- * @since 2025-10-07
- * @purpose The root component of the application that renders the MainRouter.
+ * @since 2025-10-08
+ * @purpose Thin wrapper that renders the route tree.
  */
+import React from 'react';
 import MainRouter from './MainRouter.jsx';
 
-function App() {
+export default function App() {
   return <MainRouter />;
 }
-
-export default App;

@@ -1,15 +1,16 @@
 /**
+ * @file main.jsx
  * @author Alex Kachur
- * @since 2025-10-07
- * @purpose Main entry point for the React application.
+ * @since 2025-10-08
+ * @purpose React 18 entry; mounts the app with BrowserRouter.
  */
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
-import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
