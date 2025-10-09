@@ -1,19 +1,64 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Scaffold styling */
+html,
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
 }
 
-body {
-  margin: auto;
-  width: 980px;
+#root {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header + navbar */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #444;
+}
+
+.brand {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.navlink {
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.navlink.active {
+  text-decoration: underline;
+}
+
+/* Main content wrapper */
+.site-main {
+  padding: 1.5rem 0;
+}
+
+/* Simple card utility used by my pages */
+.card {
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Button utility */
+.btn {
+  display: inline-block;
+  padding: .5rem .9rem;
+  border: 1px solid #666;
+  border-radius: 6px;
+  text-decoration: none;
 }
